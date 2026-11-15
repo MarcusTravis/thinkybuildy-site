@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ThinkyBuildy logo">
+  <rect width="64" height="64" rx="16" fill="#1f1b3a"/>
+  <path d="M32 11c-9 0-16 6.8-16 15.6 0 5.6 2.9 9.4 5.6 12.2 1.6 1.7 2.4 3.3 2.4 5.2v1h16v-1c0-1.9.8-3.5 2.4-5.2 2.7-2.8 5.6-6.6 5.6-12.2C48 17.8 41 11 32 11z" fill="#ffc94d"/>
+  <rect x="24" y="47" width="16" height="5" rx="2.5" fill="#ff7a45"/>
+  <rect x="27" y="53.5" width="10" height="3.5" rx="1.75" fill="#ff7a45"/>
+  <path d="M26.5 31.5 22 27l4.5-4.5M37.5 22.5 42 27l-4.5 4.5M34.5 20l-5 14" fill="none" stroke="#1f1b3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
