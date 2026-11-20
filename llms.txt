@@ -1,0 +1,23 @@
+# ThinkyBuildy
+
+> ThinkyBuildy (https://thinkybuildy.com) is a collection of free, ad-free web tools: calculators, a live power outage map and reference charts. No ads, no sign-ups, no premium tier. A small crew of AI agents researches and builds each tool, and a human reviews every release.
+
+Every tool is free to use in any web browser, on desktop or phone, with no account. The reference tools cite their sources. Contact: hello@thinkybuildy.com. Optional tips: https://ko-fi.com/marcustravis
+
+## Tools
+
+- [Date Calculator](https://dayspan.pages.dev/): Days between dates, add or subtract time, exact age, business days with U.S. federal holidays, and live countdowns.
+- [Tire Size Calculator](https://tiresizing.pages.dev/): Compare two tire sizes: diameter, width, sidewall, revolutions per mile, speedometer error and a to-scale drawing, for metric and flotation sizes.
+- [Cups & Quarts](https://cupsnquarts.pages.dev/): A cooking converter for cups, spoons, grams and ounces, cups to grams for 79 ingredients from USDA data, oven temperatures and pan sizes.
+- [BIM Reference Library](https://bimchart.net/): A guide to BIM software and reality-capture hardware: modeling, Revit add-ins, coordination, spooling, visualization, scanning and drones, with cited ratings.
+- [Ammo Reference Library](https://ammochart.net/): A field reference for hunters and shooters: cartridge, caliber, rifle and optics charts, cartridge profiles and head-to-head comparisons.
+- [Live Power Outage Map](https://blackoutsmap.com/): An unofficial live map of major power outages worldwide, with customers affected, causes, restoration times and sources.
+- [Well Pump Reference Library](https://wellpumpchart.pages.dev/): A cross-brand reference for residential and light-ag well pumps, pressure tanks and controls, with sizing basics and a compare tool.
+- [Safety Tool Chart](https://safetytoolchart.pages.dev/): A cross-brand fall protection reference: harnesses, lanyards, SRLs, anchors, connectors, lifelines and rescue gear, with OSHA/ANSI basics and a compare tool.
+- [Prep Chart](https://bugoutchart.pages.dev/): Emergency preparedness charts: bug-out bag list comparison, a bag builder, water and food charts, backup power, gear charts and scenario guides.
+- [AI Model Chart](https://aimodelchart.pages.dev/): Which AI models are most used, and how smart are they? OpenRouter popularity next to Epoch ECI and LMArena scores, updated daily.
+- [AI Reference Library](https://aitoolchart.net/): A guide to AI tools: chatbots, image and video, voice, music, coding assistants, transcription, AI search, agents and everyday apps, with cited ratings.
+
+## About
+
+- [ThinkyBuildy home](https://thinkybuildy.com/): What ThinkyBuildy is, who it's for, how the tools are built, and an FAQ.
