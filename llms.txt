@@ -1,6 +1,6 @@
 # ThinkyBuildy
 
-> ThinkyBuildy (https://thinkybuildy.com) is a collection of free, ad-free web tools: calculators, a live power outage map and reference charts. No ads, no sign-ups, no premium tier. A small crew of AI agents researches and builds each tool, and a human reviews every release.
+> ThinkyBuildy (https://thinkybuildy.com) is a collection of free, ad-free web tools: calculators, a live power outage map and reference charts. The tools have no ads, no sign-ups and no premium tier. A small crew of AI agents researches and builds each tool, and a human reviews every release. Game Care is a separate paid service; see below.
 
 Every tool is free to use in any web browser, on desktop or phone, with no account. The reference tools cite their sources. Contact: hello@thinkybuildy.com. Optional tips: https://ko-fi.com/marcustravis
 
@@ -21,3 +21,7 @@ Every tool is free to use in any web browser, on desktop or phone, with no accou
 ## About
 
 - [ThinkyBuildy home](https://thinkybuildy.com/): What ThinkyBuildy is, who it's for, how the tools are built, and an FAQ.
+
+## Game Care
+
+- [ThinkyBuildy Game Care](https://thinkybuildy.com/games): A separate paid service that watches player reviews and ships patches and balance changes for a flat monthly fee. The free tools stay free and ad-free.

@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ThinkyBuildy Game Care: Review Watching, Patches and Balance Fixes</title>
+<meta name="description" content="ThinkyBuildy Game Care watches your player reviews, then fixes bugs, ships patches, and tunes balance for a flat monthly fee. AI does the watching. A human checks every patch. The free ThinkyBuildy tools stay free and ad-free.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://thinkybuildy.com/games">
+<link rel="alternate" type="text/plain" href="https://thinkybuildy.com/llms.txt" title="llms.txt">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1f1b3a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ThinkyBuildy">
+<meta property="og:title" content="ThinkyBuildy Game Care: a game studio on your side">
+<meta property="og:description" content="A separate paid service that watches player reviews and ships patches for a flat monthly fee. The free ThinkyBuildy tools stay free and ad-free.">
+<meta property="og:url" content="https://thinkybuildy.com/games">
+<meta property="og:image" content="https://thinkybuildy.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ThinkyBuildy Game Care: review watching, patches and balance fixes">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ThinkyBuildy Game Care: a game studio on your side">
+<meta name="twitter:description" content="A separate paid service that watches player reviews and ships patches for a flat monthly fee. The free ThinkyBuildy tools stay free and ad-free.">
+<meta name="twitter:image" content="https://thinkybuildy.com/og-image.png">
+<meta name="twitter:image:alt" content="ThinkyBuildy Game Care: review watching, patches and balance fixes">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://thinkybuildy.com/#org","name":"ThinkyBuildy","url":"https://thinkybuildy.com/","logo":{"@type":"ImageObject","url":"https://thinkybuildy.com/apple-touch-icon.png"},"email":"hello@thinkybuildy.com"},{"@type":"WebPage","@id":"https://thinkybuildy.com/games#webpage","url":"https://thinkybuildy.com/games","name":"ThinkyBuildy Game Care","description":"A separate paid ThinkyBuildy service that watches player reviews, then fixes bugs, ships patches, and tunes balance for a flat monthly fee. The free tools stay free and ad-free.","isPartOf":{"@id":"https://thinkybuildy.com/#website"},"publisher":{"@id":"https://thinkybuildy.com/#org"}},{"@type":"Service","@id":"https://thinkybuildy.com/games#service","name":"ThinkyBuildy Game Care","url":"https://thinkybuildy.com/games","provider":{"@id":"https://thinkybuildy.com/#org"},"description":"Watch player reviews and ship patches and balance changes for a flat monthly fee. AI helps with the watching. A human checks every patch. Nothing goes to a live game without the developer's okay.","areaServed":"Worldwide","offers":[{"@type":"Offer","name":"Hobbyist","price":"249","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"249","priceCurrency":"USD","unitText":"MONTH"}},{"@type":"Offer","name":"Earning","price":"999","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"999","priceCurrency":"USD","unitText":"MONTH"}}]}]}</script>
+<style>
+:root{--ink:#1f1b3a;--ink2:#4a4566;--paper:#fffaf1;--card:#ffffff;--sun:#ffc94d;--tang:#ff7a45;--mint:#3cc6a0;--sky:#6c8cff;--line:#ece4d4;--r:18px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header.top{padding:18px 0}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;text-decoration:none;letter-spacing:-.01em}
+.brand img{width:36px;height:36px}
+.brand .b{color:var(--tang)}
+nav.top a{text-decoration:none;font-weight:600;margin-left:18px;color:var(--ink2)}
+nav.top a:hover{color:var(--ink)}
+nav.top a[aria-current="page"]{color:var(--ink)}
+.hero{padding:48px 0 64px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600;color:var(--ink2)}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--mint);display:inline-block}
+h1{font-size:clamp(2.3rem,5.6vw,4rem);line-height:1.04;letter-spacing:-.03em;margin:18px 0 18px;font-weight:850}
+h1 .t{background:linear-gradient(transparent 62%,var(--sun) 62%);padding:0 .08em}
+h1 .bu{background:linear-gradient(transparent 62%,#ffc1a6 62%);padding:0 .08em}
+.lede{font-size:1.18rem;color:var(--ink2);max-width:34em;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:14px;font-weight:700;text-decoration:none;border:2px solid var(--ink);transition:transform .15s ease,box-shadow .15s ease;cursor:pointer;font-family:inherit;font-size:1rem;background:#fff;color:var(--ink)}
+.btn.primary{background:var(--ink);color:#fff;box-shadow:4px 4px 0 var(--tang)}
+.btn.ghost{background:#fff}
+.btn:hover{transform:translate(-2px,-2px)}
+.btn.primary:hover{box-shadow:6px 6px 0 var(--tang)}
+.art{position:relative;aspect-ratio:1;max-width:340px;justify-self:center;width:100%}
+.art .blob{position:absolute;inset:8%;background:var(--sun);border-radius:42% 58% 55% 45%/50% 42% 58% 50%;transform:rotate(-8deg)}
+.art img{position:absolute;inset:18%;width:64%;height:64%;filter:drop-shadow(6px 8px 0 rgba(31,27,58,.18));animation:bob 5s ease-in-out infinite}
+.art .chip{position:absolute;background:#fff;border:2px solid var(--ink);border-radius:12px;padding:6px 11px;font-weight:700;font-size:.85rem;box-shadow:3px 3px 0 var(--ink)}
+.art .c1{top:4%;left:0;transform:rotate(-6deg)}
+.art .c2{bottom:10%;right:-2%;transform:rotate(5deg)}
+.art .c3{bottom:2%;left:6%;transform:rotate(-3deg)}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (prefers-reduced-motion:reduce){.art img{animation:none}.btn{transition:none}}
+section{padding:64px 0}
+.kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--tang);margin:0 0 8px}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);letter-spacing:-.02em;line-height:1.15;margin:0 0 14px}
+.sub{color:var(--ink2);max-width:40em;margin:0 0 32px;font-size:1.06rem}
+.promise{background:var(--ink);color:#fff}
+.promise .sub{color:#cfcbe6}
+.promise .kicker{color:var(--sun)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pillar{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.14);border-radius:var(--r);padding:22px}
+.pillar h3{margin:0 0 6px;font-size:1.08rem}
+.pillar p{margin:0;color:#cfcbe6;font-size:.96rem}
+.crew{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{background:#fff;border:1.5px solid var(--line);border-radius:var(--r);padding:22px;position:relative}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:-14px;left:18px;background:var(--tang);color:#fff;font-weight:800;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:.95rem;border:2px solid var(--paper)}
+.step h3{margin:6px 0 6px;font-size:1.05rem}
+.step p{margin:0;color:var(--ink2);font-size:.95rem}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.plan{display:flex;flex-direction:column;background:var(--card);border:2px solid var(--ink);border-radius:var(--r);padding:26px;box-shadow:5px 5px 0 var(--c,var(--sun))}
+.plan.earning{--c:var(--tang)}
+.plan .tag{display:inline-block;background:var(--c,var(--sun));color:var(--ink);font-weight:800;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 10px;margin:0 0 12px}
+.plan h3{margin:0 0 4px;font-size:1.45rem}
+.plan .price{font-size:2.2rem;font-weight:800;letter-spacing:-.03em;margin:8px 0}
+.plan .price span{font-size:1rem;font-weight:700;color:var(--ink2)}
+.plan .for{color:var(--ink2);margin:0 0 18px}
+.plan ul{margin:0 0 22px;padding:0;list-style:none;flex:1}
+.plan li{position:relative;padding:0 0 10px 22px;color:var(--ink2)}
+.plan li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;border-radius:50%;background:var(--c,var(--sun));border:2px solid var(--ink)}
+.plan .not{font-size:.92rem;color:var(--ink2);margin:0 0 18px}
+.founding{background:#fff3df;border-top:1.5px solid var(--line);border-bottom:1.5px solid var(--line)}
+.founding .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.founding .spots{background:#fff;border:2px solid var(--ink);border-radius:var(--r);padding:22px;box-shadow:5px 5px 0 var(--tang);text-align:center}
+.founding .spots strong{display:block;font-size:2rem;letter-spacing:-.03em}
+.applybox{background:#fff;border:2px solid var(--ink);border-radius:var(--r);padding:28px;box-shadow:5px 5px 0 var(--sky);max-width:720px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-weight:700;font-size:.92rem;margin:0 0 6px}
+.field{margin:0 0 14px}
+input[type="text"],input[type="email"],input[type="url"],select,textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;font:inherit;color:var(--ink);background:#fffaf8}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--sky);border-color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+.formnote{margin:0 0 18px;color:var(--ink2)}
+.faq{max-width:46em}
+.faq details{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:14px 18px;margin:0 0 10px}
+.faq summary{font-weight:700;cursor:pointer}
+.faq details p{margin:10px 0 0;color:var(--ink2)}
+footer{padding:40px 0 48px;font-size:.95rem;color:var(--ink2)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+footer a{font-weight:700;color:var(--ink);text-decoration:none}
+footer a:hover{color:var(--tang)}
+footer .support a{font-weight:700;color:var(--ink)}
+footer .support a:hover{color:var(--tang)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.art{max-width:260px;order:-1}.pillars,.crew,.plans,.founding .wrap,.grid2{grid-template-columns:1fr}}
+@media (max-width:600px){nav.top{display:none}.hero{padding:20px 0 48px}section{padding:52px 0}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/logo.svg" alt="" width="36" height="36"><span>Thinky<span class="b">Buildy</span></span></a>
+    <nav class="top" aria-label="Main"><a href="/#tools">Tools</a><a href="/games" aria-current="page">Game Care</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#apply">Apply</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill"><i></i>A paid ThinkyBuildy service · The free tools stay free</span>
+      <h1>A game studio on your side. <span class="t">Thinky</span> brains, <span class="bu">buildy</span> hands.</h1>
+      <p class="lede">ThinkyBuildy Game Care watches your player reviews, then fixes bugs, ships patches, and tunes balance — for a flat monthly fee. AI does the watching. A human checks every patch before it is proposed to you. You keep the game, the accounts, and the last word.</p>
+      <div class="cta">
+        <a class="btn primary" href="#plans">See the plans</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+    </div>
+    <div class="art" aria-hidden="true">
+      <div class="blob"></div>
+      <img src="/logo.svg" alt="">
+      <span class="chip c1">Reviews watched</span>
+      <span class="chip c2">Patches shipped</span>
+      <span class="chip c3">A human checks it</span>
+    </div>
+  </div>
+</section>
+
+<section class="promise">
+  <div class="wrap">
+    <p class="kicker">Why this exists</p>
+    <h2>Built for solo devs and tiny teams, including vibe coders.</h2>
+    <p class="sub">If you shipped a game — or you are about to — you should not have to live in the review thread alone. Hobbyists who fund a game from their own pocket are welcome even if the game earns nothing. Games that already make money get a higher tier with more hours and faster replies.</p>
+    <div class="pillars">
+      <div class="pillar">
+        <h3>We watch the feedback</h3>
+        <p>Steam, Google Play, the App Store, itch.io, and Discord if you invite us. You get a regular digest instead of a pile of tabs.</p>
+      </div>
+      <div class="pillar">
+        <h3>We ship the little fixes</h3>
+        <p>Bugs, crashes, and light balance work, inside a clear hour cap. No surprise invoices for “while we were in there.”</p>
+      </div>
+      <div class="pillar">
+        <h3>A human still signs off</h3>
+        <p>Same rule as the free ThinkyBuildy tools: AI can draft, but nothing is proposed to you until a person has checked it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <p class="kicker">How it works</p>
+    <h2>Four steps, then it repeats every month.</h2>
+    <p class="sub">You stay in charge of the live game. We never take passwords, and we never publish a patch unless you say yes.</p>
+    <div class="crew">
+      <div class="step">
+        <h3>You point us at the game</h3>
+        <p>Store links, a collaborator invite to the repo, and optionally Discord. You can revoke access at any time.</p>
+      </div>
+      <div class="step">
+        <h3>We watch the reviews</h3>
+        <p>AI helps gather and sort player feedback. You get a digest and a short recommended patch list.</p>
+      </div>
+      <div class="step">
+        <h3>We patch what’s broken</h3>
+        <p>Fixes and small balance tweaks inside your plan’s hours. Extra work only happens if you approve it first.</p>
+      </div>
+      <div class="step">
+        <h3>A human checks it</h3>
+        <p>Every patch is reviewed, then you approve anything that will go live. You keep the store accounts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="wrap">
+    <p class="kicker">Plans</p>
+    <h2>Two flat monthly fees. No long-term contract.</h2>
+    <p class="sub">Cancel anytime. The plan runs through the end of the month already paid. Hours are a starting cap; we will measure real time with the first pilots and keep the offer honest.</p>
+    <div class="plans">
+      <article class="plan">
+        <span class="tag">Hobbyist</span>
+        <h3>Hobbyist</h3>
+        <p class="price">$249 <span>a month</span></p>
+        <p class="for">For games you love, even if they earn $0.</p>
+        <ul>
+          <li>Weekly digest of reviews and Discord feedback</li>
+          <li>Bug triage and a short recommended patch list</li>
+          <li>4 hours of patch and balance work</li>
+          <li>Email support, with a reply in 2 business days</li>
+          <li>A human reviews every patch before you see it</li>
+        </ul>
+        <p class="not">Not included: new features, art, marketing, or 24/7 emergency coverage. Extra hours are $75 each, only if you approve them first.</p>
+        <a class="btn ghost" href="#apply">Ask about a Hobbyist pilot</a>
+      </article>
+      <article class="plan earning">
+        <span class="tag">Earning</span>
+        <h3>Earning</h3>
+        <p class="price">$999 <span>a month</span></p>
+        <p class="for">For games that already have paying players.</p>
+        <ul>
+          <li>Everything in Hobbyist, plus closer monitoring</li>
+          <li>12 hours of patch, balance, and store-update help</li>
+          <li>A monthly balance pass</li>
+          <li>First response to a critical live bug in 1 business day, and a fix plan within 48 hours</li>
+          <li>You still keep the accounts and the publish button</li>
+        </ul>
+        <p class="not">Not included: new features, art, marketing, or guaranteed sales. Extra hours are $90 each, only if you approve them first.</p>
+        <a class="btn primary" href="#apply">Ask about an Earning pilot</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="founding" id="founding">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Founding spots</p>
+      <h2>Three pilot spots, at a lower price, while we measure the real hours.</h2>
+      <p class="sub" style="margin-bottom:0">The first three spots get three months at $149 (Hobbyist) or $599 (Earning), then the regular price, and can cancel anytime. In return: honest feedback, permission to track hours (not to publish your code), and an optional short testimonial if you are happy.</p>
+    </div>
+    <div class="spots">
+      <strong>3 spots</strong>
+      $149 or $599 a month<br>for the first 90 days
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="kicker">Common questions</p>
+    <h2>Before you write to us.</h2>
+    <div class="faq">
+      <details>
+        <summary>Are the free ThinkyBuildy tools staying free?</summary>
+        <p>Yes. The calculators, charts, and other tools on thinkybuildy.com stay free, with no ads and no sign-ups. Game Care is a separate paid service for people who have shipped a game and want help after launch.</p>
+      </details>
+      <details>
+        <summary>What does a month actually include?</summary>
+        <p>A regular review digest, a short patch list, and a capped number of hours for fixes and light balance work: 4 hours on Hobbyist, 12 hours on Earning. Unused hours do not roll over. Nothing goes to a live game without your okay.</p>
+      </details>
+      <details>
+        <summary>Will you need my store passwords?</summary>
+        <p>No. Never send passwords, two-factor codes, or recovery keys. A collaborator invite to the repo, and a role you can revoke, is enough. You keep the store accounts.</p>
+      </details>
+      <details>
+        <summary>Do you take a cut of the game, or own any of it?</summary>
+        <p>No. You own the game, the code, and the work we create for you. We do not take a revenue share.</p>
+      </details>
+      <details>
+        <summary>Can you guarantee better reviews or more sales?</summary>
+        <p>No, and we will not pretend to. We can watch the feedback and ship careful fixes. Players, stores, and discovery are still out of anyone’s full control.</p>
+      </details>
+      <details>
+        <summary>What engines and tools do you work with?</summary>
+        <p>Unity, Godot, Unreal, and web games, including projects built with AI coding tools. If a project is too fragile to touch safely in the included hours, we will say so and may suggest a one-time stabilization quote instead of a monthly plan.</p>
+      </details>
+      <details>
+        <summary>How do I cancel?</summary>
+        <p>Anytime, by email. The plan runs through the end of the month already paid. There is no long-term contract.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="apply">
+  <div class="wrap">
+    <p class="kicker">Apply</p>
+    <h2>Tell us about the game.</h2>
+    <p class="sub">Fill in the fields and hit Apply. That opens an email to <a href="mailto:hello@thinkybuildy.com">hello@thinkybuildy.com</a> with what you typed, so you can send it from your own inbox. You can also email that address directly.</p>
+    <form class="applybox" id="apply-form" action="mailto:hello@thinkybuildy.com" method="get">
+      <p class="formnote">There are three founding spots at $149/mo (Hobbyist) or $599/mo (Earning) for the first three months.</p>
+      <div class="grid2">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Ada Chen">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com">
+        </div>
+      </div>
+      <div class="field">
+        <label for="game">Game name and a store or build link</label>
+        <input id="game" name="game" type="text" placeholder="Sunlight Cart, https://example.itch.io/sunlight-cart">
+      </div>
+      <div class="grid2">
+        <div class="field">
+          <label for="engine">Engine or tools</label>
+          <input id="engine" name="engine" type="text" placeholder="Unity, Godot, Unreal, web…">
+        </div>
+        <div class="field">
+          <label for="plan">Plan you’re interested in</label>
+          <select id="plan" name="plan">
+            <option value="">Choose one</option>
+            <option>Hobbyist — $249/mo (founding $149)</option>
+            <option>Earning — $999/mo (founding $599)</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="about">What’s going on with the game?</label>
+        <textarea id="about" name="about" placeholder="A short note is enough: just shipped, review complaints, a crash you cannot pin down…"></textarea>
+      </div>
+      <a class="btn primary" id="apply-btn" href="mailto:hello@thinkybuildy.com?subject=Game%20Care%20application">Apply by email</a>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 ThinkyBuildy · Game Care is a paid service. <a href="/">The free tools stay free</a>. · <a href="/#tools">Tools</a> · <a href="#apply">Apply</a> · <a href="/llms.txt">llms.txt</a></span>
+    <p class="support" style="margin:0"><a href="https://ko-fi.com/marcustravis" rel="noopener">The free tools stay free and ad-free. If a tool helped you, buy me a coffee →</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var link = document.getElementById("apply-btn");
+  var ids = ["name", "email", "game", "engine", "plan", "about"];
+  function val(id) {
+    var el = document.getElementById(id);
+    return el ? (el.value || "").trim() : "";
+  }
+  function build() {
+    var game = val("game");
+    var subject = "Game Care application" + (game ? ": " + game : "");
+    var lines = [
+      "Game Care application",
+      "",
+      "Name: " + val("name"),
+      "Email: " + val("email"),
+      "Game: " + game,
+      "Engine or tools: " + val("engine"),
+      "Plan: " + val("plan"),
+      "",
+      val("about")
+    ];
+    return "mailto:hello@thinkybuildy.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+  }
+  function update() { link.href = build(); }
+  ids.forEach(function (id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener("input", update);
+    el.addEventListener("change", update);
+  });
+  update();
+})();
+</script>
+</body>
+</html>
